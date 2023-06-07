@@ -1,4 +1,4 @@
-import image from "./Dumbbell exercise-rafiki.png"
+import image from "./Personal Trainer-amico.png"
 import './cadastro.css';
 
 function Instrutor (){

@@ -1,32 +1,31 @@
 import './plano.css';
-import { AiOutlineCheck } from 'react-icons/ai';
+/*import { AiOutlineCheck } from 'react-icons/ai';*/
 
 function Plano (){
     return (
         <>
-            <header>
-        <h2>Escolha o seu Plano </h2>
-    </header>
-    <main class="cards">
-        <section class="card contact">
-        
-            <h3>Plano Mensal</h3>
-            <span> <AiOutlineCheck/> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-            <button>Learn More</button>
-        </section>
-        <section class="card shop">
-            
-            <h3>Plano Trimestral</h3>
-            <span> <AiOutlineCheck/> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-            <button>Learn More</button>
-        </section>
-        <section class="card about">
-            
-            <h3>Plano Anual</h3>
-            <span> <AiOutlineCheck/> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-            <button>Learn More</button>
-        </section>
-    </main>
+            <main class="main">
+    <section class="person-container">
+      
+      <h1 class="person-container__name">Escolha seu plano</h1>
+      {/*<h2 class="person-container__subtitle">Vocalista na banda Iron Maiden</h2>*/}
+    </section>
+
+    <section class="info-container">
+      <div class="info-box">
+        <h3 class="info-box__title">Plano Mensal</h3>
+        <p>Proin iaculis finibus ornare. Nunc rutrum ac magna vel aliquam. Phasellus dapibus metus nisi, sit amet maximus risus dapibus eget.</p>
+      </div>
+      <div class="info-box">
+        <h3 class="info-box__title">Plano Trimestral</h3>
+        <p>Proin iaculis finibus ornare. Nunc rutrum ac magna vel aliquam. Phasellus dapibus metus nisi, sit amet maximus risus dapibus eget.</p>
+      </div>
+      <div class="info-box">
+        <h3 class="info-box__title">Plano Anual</h3>
+        <p>Proin iaculis finibus ornare. Nunc rutrum ac magna vel aliquam. Phasellus dapibus metus nisi, sit amet maximus risus dapibus eget.</p>
+      </div>
+    </section>
+  </main>
         </>
     )
 }

@@ -2,113 +2,83 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-}
-
-main {
-    background: #F6F9FF;
+  }
+  
+  /* Body */
+  body {
+    background-color: rgba(0, 0, 0, 0.904);
+  }
+  
+  /* Container principal */
+  .main {
+    background-position: center;
     height: 100vh;
-    width: 100%;
-
-    justify-content: center;
-    align-items: center;
-
-    color: #434343;
-    font-size: 16px;
-    display: flex;
-}
-
-main.cards {
-    margin: auto;
-    display: flex;
-    padding: 32px;
-}
-
-main.cards section.card {
+    text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background: white;
-    padding: 1rem 1.5rem;
-    border-radius: 8px;
-    max-height: 468px;
-    margin-left: 32px;
-}
-
-main.cards section.card:first-child {
-    margin-left: 0;
-}
-
-main.cards section.card .icon {
-    width: 64px;
-    height: 64px;
-}
-
-main.cards section.card img {
-    width: 100%;
-}
-
-main.cards section.card h3 {
-    font-size: 100%;
-    margin: 16px 0;
-}
-
-main.cards section.card span {
-    font-weight: 300;
-    max-width: 240px;
-    font-size: 80%;
-    margin-bottom: 16px;
-}
-
-main.cards section.card button {
-    padding: 0.5rem 1rem;
-    text-transform: uppercase;
+    justify-content: center;
+  }
+  
+  .person-container {
+    color: #FFFFFF;
+  }
+  
+  .person-container__img  {
+    width: 120px;
+    border-radius: 50%;
+    border: 8px solid #FFD701;
+    margin-bottom: 24px;
+  }
+  
+  .person-container__name {
+    font-size: 40px;
+    margin-bottom: 8px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 40px;
+  }
+  
+  .person-container__subtitle {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+  
+  .info-container {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  
+  .info-box {
+    width: 340px;
+    height: 180px;
+    background-color: #FFD701;
+    padding: 24px;
     border-radius: 32px;
-    border: 0;
-    cursor: pointer;
-    font-size: 80%;
-    font-weight: 500;
-    color: #fff;
-    margin-bottom: 16px 0;
-}
-
-main.cards section.card.contact button {
-    background: linear-gradient(to right, #9F66FF, #DFCBFF);
-}
-main.cards section.card.shop button {
-    background: linear-gradient(to right, #3E8AFF, #BBDEFF);
-}
-main.cards section.card.about button {
-    background: linear-gradient(to right, #FE5F8F, #FFC7D9);
-}
-
-main.cards section.card.contact {
-    box-shadow: 20px 20px 50px -30px #DBC4FF;
-}
-main.cards section.card.shop {
-    box-shadow: 20px 20px 50px -30px #AFD6FF;
-}
-main.cards section.card.about {
-    box-shadow: 20px 20px 50px -30px #FFC1D5;
-}
-
-@media screen and (max-width: 720px) {
-    main.cards {
-        flex-direction: column;
-    }
-
-    main.cards section.card {
-        margin-left: 0;
-        margin-bottom: 32px;
-    }
-
-    main.cards section.card:last-child {
-        margin-bottom: 0;
-    }
-
-    main.cards section.card button {
-        font-size: 70%;
-    }
-
-}
+  }
+  
+  .info-box__title {
+    font-family: 'maiden';
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  
+  .contact-container {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+  }
+  
+  .contact-container__link {
+    background-color: #13121A;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .contact-container__icon {
+    width: 32px;
+  }

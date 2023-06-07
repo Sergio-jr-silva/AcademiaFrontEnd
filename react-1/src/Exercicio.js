@@ -1,5 +1,5 @@
 import './cadastro.css';
-import image from './Dumbbell exercise-rafiki.png'
+import image from './Personalized workouts-bro.png'
 
 function Exercicio(){
     return (
