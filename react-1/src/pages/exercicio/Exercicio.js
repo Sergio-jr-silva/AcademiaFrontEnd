@@ -1,5 +1,5 @@
-import './cadastro.css';
-import image from './Personalized workouts-bro.png'
+import '../cadastro/cadastro.css';
+import image from '../../images/Personalized workouts-bro.png'
 
 function Exercicio(){
     return (
@@ -9,8 +9,8 @@ function Exercicio(){
             <img src={image}/>
         </div>
         <div class="form-box">
-            <h2>Criar Conta</h2>
-            <p> Já é um membro? <a href="#"> Login </a> </p>
+            <h2>Criar Exercício</h2>
+
             <form action="#">
                 <div class="input-group">
                         <label for="repeticoes"> Repetições </label>

@@ -13,7 +13,7 @@ section{
     min-height: 100vh;
     width: 100%;
     
-    background: url('2019-03-16-limpeza-de-academia.jpg')no-repeat;
+    background: url('../../images/2019-03-16-limpeza-de-academia.jpg')no-repeat;
     background-position: center;
     background-size: cover;
 }

@@ -1,5 +1,5 @@
-import image from "./Personal Trainer-amico.png"
-import './cadastro.css';
+import image from "../../images/Personal Trainer-amico.png"
+import '../cadastro/cadastro.css';
 
 function Instrutor (){
     return (
@@ -10,7 +10,7 @@ function Instrutor (){
         </div>
         <div class="form-box">
             <h2>Criar Conta</h2>
-            <p> Já é um membro? <a href="#"> Login </a> </p>
+            <p> Já tem uma conta? <a href="#"> Login </a> </p>
             <form action="#">
                 <div class="input-group">
                     <label for="nome"> Primeiro Nome </label>

@@ -1,6 +1,6 @@
 /*import image from './homem-fazendo-exercicios-com-halteres-treinando-em-casa-com-equipamentos-esportivos-esporte-e-construcao-muscular-pessoa-esportiva-fazendo-treino-de-braco-no-ginasio-treinador-realiza-.avif';*/
 import './cadastro.css';
-import image from './Dumbbell exercise-rafiki.png'
+import image from '../../images/Dumbbell exercise-rafiki.png'
 
     function Cadastro (){
         return (
@@ -11,7 +11,7 @@ import image from './Dumbbell exercise-rafiki.png'
         </div>
         <div class="form-box">
             <h2>Criar Conta</h2>
-            <p> Já é um membro? <a href="#"> Login </a> </p>
+            <p> Já tem uma conta? <a href="/login"> Login </a> </p>
             <form action="#">
                 <div class="input-group">
                     <label for="nome"> Primeiro Nome </label>

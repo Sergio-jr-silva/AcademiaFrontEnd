@@ -1,5 +1,5 @@
-import './cadastro.css';
-import image from './Gym-rafiki.png'
+import '../cadastro/cadastro.css';
+import image from '../../images/Gym-rafiki.png'
 
 function Treino (){
     return(
@@ -9,8 +9,8 @@ function Treino (){
             <img src={image}/>
         </div>
         <div class="form-box">
-            <h2>Criar Conta</h2>
-            <p> Já é um membro? <a href="#"> Login </a> </p>
+            <h2>Criar Treino</h2>
+            
             <form action="#">
                 <div class="input-group">
                     <label for="nome"> Nome do Treino </label>

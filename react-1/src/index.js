@@ -1,14 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+//import './index.css';
 //import App from './App';
 import reportWebVitals from './reportWebVitals';
-//import Login from './Login';
-//import Cadastro from './Cadastro';
-//import Instrutor from './Instrutor';
-//import Treino from './Treino';
-//import Exercicio from './Exercicio';
-import Plano from './Plano';
+//import Login from './pages/login/Login';
+//import Cadastro from './pages/cadastro/Cadastro';
+//import Instrutor from './pages/instrutor/Instrutor';
+//import Treino from './pages/treino/Treino';
+//import Exercicio from './pages/exercicio/Exercicio';
+//import Home from './pages/home/Home';
+//import Sidebar from './pages/Sidebar/Sidebar'
+import Plano from './pages/plano/Plano';
+//import RoutesApp from './Routes';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
