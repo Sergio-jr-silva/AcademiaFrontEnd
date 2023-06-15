@@ -27,8 +27,8 @@
   
   .person-container__name {
     font-size: 35px;
-    /*margin-bottom: 50px;*/
-    margin-top: -100px;
+    /*margin-bottom: 50px;
+    margin-top: -100px;*/
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 40px;
   }
@@ -101,6 +101,7 @@
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
   padding: 10px;
+  margin-left: 8rem;
 }
 
 .pagamento label {
@@ -115,38 +116,49 @@ select {
   border-radius: 15px;
   margin-top: .7rem;
   font-size: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.432);
 }
 
 option {
   color: black;
 }
 
-.select button {
-  text-align: center;
-  align-items: center;
+.select select:hover{
+  border: 1px solid white;
+}
+
+.botao button {
   background-color: transparent;
   color: #fff;
   font-size: 20px;
   cursor: pointer;
-  border: 1px solid rgba(255, 255, 255, 0.596);
-  padding: 5px;
-  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.432);
+  padding: 5px 15px;
+  margin: 10px;
+  border-radius: 8px;
 }
 
-.select button:hover {
+.botao{
+  text-align: center;
+}
+
+.botao button:hover {
   border: 1px solid white;
 }
 
   @media (max-width: 700px){
     .person-container__name {
       padding: 17rem 0 16rem 0;
-      margin-bottom: -10rem;
+      margin-bottom: -15rem;
     }
     .pagamento .select {
       padding-left: 15px;
       margin-top: 15rem;
     }
-    .info-container {
-      margin-top: 10rem;
+    .pagamento .select{
+      margin-left: 0;
     }
+    /*.info-container {
+      margin-top: 10rem;
+    }*/
   }

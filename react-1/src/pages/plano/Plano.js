@@ -47,8 +47,8 @@ function Plano (){
             <option value="2">Pix</option>
             <option value="3">Boleto</option>
           </select>
-          <button> Comprar </button>
-    </p>
+          </p>
+          <div class="botao"><button> Comprar </button></div>
   </div>
         </>
     )
