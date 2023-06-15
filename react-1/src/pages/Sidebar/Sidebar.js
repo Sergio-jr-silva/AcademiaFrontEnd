@@ -10,7 +10,7 @@ const Sidebar = () => {
   };
 
   return (
-    <div>
+    <div class="menu">
       <SidebarButton onClick={handleSidebarToggle} />
       {isSidebarOpen && <div className="sidebar">
         <li><a href='/home'>Home</a></li>

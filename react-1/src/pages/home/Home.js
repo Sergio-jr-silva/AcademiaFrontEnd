@@ -6,7 +6,7 @@ function Home(){
     return (
         <>
         <div class="Home"> 
-        <nav style={{marginTop: '-20px'}}>
+        <nav style={{marginTop: '-0px'}}>
         <ul class="menu">
             <li class="logo"><a href="/">Next Level</a></li>
             <li class="item"><a href="/">Home</a></li>

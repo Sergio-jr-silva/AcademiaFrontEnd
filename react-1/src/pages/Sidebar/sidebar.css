@@ -10,8 +10,8 @@
   
   /* Botão */
     .sidebar_button{
-    top: 1.5%;
-    left: 3%;
+    top: 2.8%;
+    left: 1.5%;
     position: absolute;
     display: flex;
     font-size: 30px;
@@ -23,20 +23,23 @@
   }
   
   /* Menu */
+
   .sidebar{
       background-color: #0000007a; 
       position: absolute;
-      top: 5.9%;
+      top: 10.6%;
       left: 32.2%;
       margin-left: 50%;
       display: block;
       list-style: none;
       width: 500px;
       color: #fff;
+
   }
-  
-  li{
-      padding: 10px;
+
+  li a {
+    padding: 15px 10px;
+    justify-content: center;
   }
   
   }
