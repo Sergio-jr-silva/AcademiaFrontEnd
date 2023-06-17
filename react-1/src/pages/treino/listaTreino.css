@@ -1,0 +1,18 @@
+body {
+    background-color: rgba(0, 0, 0, 0.904);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div {
+    width: 80vw;
+    margin-top: 5%;
+}
+
+div header h1 {
+    padding: 20px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+}

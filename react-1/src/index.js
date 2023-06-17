@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import 'bootstrap/dist/css/bootstrap.min.css'
 //import './index.css';
 //import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -10,13 +11,14 @@ import reportWebVitals from './reportWebVitals';
 //import Exercicio from './pages/exercicio/Exercicio';
 //import Home from './pages/home/Home';
 //import Sidebar from './pages/Sidebar/Sidebar'
-import Plano from './pages/plano/Plano';
+//import Plano from './pages/plano/Plano';
 //import RoutesApp from './Routes';
+import ListaTreino from './pages/treino/ListaTreino';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Plano/>
+    <ListaTreino/>
   </React.StrictMode>
 );
 
