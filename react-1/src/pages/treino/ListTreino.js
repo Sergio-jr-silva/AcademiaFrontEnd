@@ -1,8 +1,8 @@
 import React from "react";
 import { Table } from "reactstrap";
-import './listaTreino.css'
+import './listatreino.css'
 
-class ListaTreino extends React.Component {
+class ListTreino extends React.Component {
     constructor(props){
         super(props)
 
@@ -40,4 +40,4 @@ class ListaTreino extends React.Component {
     }
 }
 
-export default ListaTreino;
+export default ListTreino;

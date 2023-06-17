@@ -13,12 +13,12 @@ import reportWebVitals from './reportWebVitals';
 //import Sidebar from './pages/Sidebar/Sidebar'
 //import Plano from './pages/plano/Plano';
 //import RoutesApp from './Routes';
-import ListaTreino from './pages/treino/ListaTreino';
+import ListTreino from './pages/treino/ListTreino'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ListaTreino/>
+    <ListTreino/>
   </React.StrictMode>
 );
 
