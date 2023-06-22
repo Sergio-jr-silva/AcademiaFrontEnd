@@ -1,4 +1,4 @@
-import '../cadastro/cadastro.css';
+import './exercicio.css'
 import image from '../../images/Personalized workouts-bro.png'
 
 function Exercicio(){
@@ -12,22 +12,22 @@ function Exercicio(){
             <h2>Criar Exercício</h2>
 
             <form action="#">
-                <div class="input-group">
+                <div class="input-exercicio">
                         <label for="repeticoes"> Repetições </label>
                         <input type="text" id="repeticoes" placeholder="Ex: 4x15" required/>
                     </div>
 
-                <div class="input-group">
+                <div class="input-exercicio">
                     <label for="serie"> Número de Série </label>
                     <input type="text" id="serie" placeholder="Ex: 3x" required/>
                 </div>
 
-                <div class="input-group">
+                <div class="input-exercicio">
                     <label for="carga">Carga</label>
                     <input id="carga" type="text" name="carga" placeholder="Ex: 5kg" required/>
                 </div>
 
-                <div class="input-group">
+                <div class="input-exercicio">
                     <button>Cadastrar</button>
                 </div>
 

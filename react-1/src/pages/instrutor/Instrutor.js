@@ -1,48 +1,43 @@
 import image from "../../images/Personal Trainer-amico.png"
-import '../cadastro/cadastro.css';
+import './instrutor.css';
 
 function Instrutor (){
     return (
         <>
-            <div class="box">
+            <div class="box-instrutor">
         <div class="img-box">
             <img src={image}/>
         </div>
-        <div class="form-box">
-            <h2>Criar Conta</h2>
-            <p> Já tem uma conta? <a href="#"> Login </a> </p>
+        <div class="form-box-instrutor">
+           
             <form action="#">
-                <div class="input-group">
-                    <label for="nome"> Primeiro Nome </label>
-                    <input type="text" id="nome" placeholder="Digite o seu primeiro nome" required/>
+            <h2>Criar Conta</h2>
+                <div class="input-instrutor">
+                    <label for="nome"> Nome </label>
+                    <input type="text" id="nome" placeholder="Digite o seu Nome Completo" required/>
                 </div>
 
-                <div class="input-group">
-                    <label for="sobrenome"> Sobrenome </label>
-                    <input type="text" id="sobrenome" placeholder="Digite o seu Sobrenome" required/>
-                </div>
-
-                <div class="input-group">
+                <div class="input-instrutor">
                     <label for="data"> Data de Nascimento </label>
                     <input type="date" name="data" id="data"/>
                 </div>
 
-                <div class="input-group">
+                <div class="input-instrutor">
                         <label for="salario"> Salário </label>
                         <input type="text" id="salario" placeholder="Digite o seu salário" required/>
                     </div>
 
-                <div class="input-group">
+                <div class="input-instrutor">
                     <label for="data">Data de Admissão</label>
                     <input id="dataAdmissao" type="date" name="data" required/>
                 </div>
 
-                <div class="input-group">
+                <div class="input-instrutor">
                     <label for="email">E-mail</label>
                     <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required/>
                     </div>
     
-                    <div class="input-group">
+                    <div class="input-instrutor">
                         <label for="celular">Celular</label>
                         <input type="cel" id="celular" placeholder="(00) 0000-0000" required/>
                     </div>
@@ -62,20 +57,20 @@ function Instrutor (){
                     <input type="radio" name='radio' id='nao' value={'Não'}/><label for="nao">Não</label>
                 </div>
 
-                <div class="input-group w50">
+                <div class="input-instrutor w50">
                     <label for="senha">Senha</label>
                     <input type="password" id="senha" placeholder="Digite sua senha" required/>
                 </div>
 
-                <div class="input-group w50">
+                <div class="input-instrutor w50">
                     <label for="Confirmarsenha">Confirmar Senha</label>
                     <input type="password" id="Confirmarsenha" placeholder="Confirme a senha" required/>
                 </div>
 
-                <div class="input-group">
+                <div class="input-instrutor">
                     <button>Cadastrar</button>
                 </div>
-
+               
             </form>
         </div>
     </div>
