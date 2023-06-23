@@ -13,13 +13,8 @@ import image from '../../images/Dumbbell exercise-rafiki.png'
             <form action="#">
             <h2>Criar Conta</h2>
                 <div class="input-cadastro">
-                    <label for="nome"> Primeiro Nome </label>
-                    <input type="text" id="nome" placeholder="Digite o seu primeiro nome" required/>
-                </div>
-
-                <div class="input-cadastro">
-                    <label for="sobrenome"> Sobrenome </label>
-                    <input type="text" id="sobrenome" placeholder="Digite o seu Sobrenome" required/>
+                    <label for="nome">Nome completo </label>
+                    <input type="text" id="nome" placeholder="Digite o seu nome Completo" required/>
                 </div>
 
                 <div class="input-cadastro">
@@ -37,14 +32,30 @@ import image from '../../images/Dumbbell exercise-rafiki.png'
                         <input type="cel" id="celular" placeholder="(00) 0000-0000" required/>
                     </div>
 
-                    <div class="input-cadastro">
-                        <label for="altura"> Altura </label>
-                        <input type="text" id="altura" placeholder="Digite sua altura" required/>
-                    </div>
+                    <div class="input-cadastro w50">
+                    <label for="senha">peso</label>
+                    <input type="text" id="senha" placeholder="Digite seu peso" required/>
+                </div>
 
-                    <div class="input-cadastro">
-                        <label for="peso"> Peso </label>
-                        <input type="text" id="peso" placeholder="Digite o seu peso" required/>
+                <div class="input-cadastro w50">
+                    <label for="Confirmarsenha">altura</label>
+                    <input type="text" id="Confirmarsenha" placeholder="digite sua altura em cm" required/>
+                </div>
+
+
+                <div class="input-option" id="select">
+                        <label for="plano" style={{color: '#3D3D3D', fontWeight: 'bold', display: 'block', marginBottom: '5px'}}>Selecione seu plano</label>
+                        <select name="plano" id="plano" style={{backgroundColor: 'transparent', padding: '3px', marginLeft: '10px', borderRadius: '10px'}}>
+                            <option value="1">Basic</option>
+                            <option value="2"> Medium</option>
+                            <option value="3"> Premium</option>  
+                        </select>
+
+                        <label for="plano" style={{color: '#3D3D3D', fontWeight: 'bold', display: 'block', marginBottom: '5px'}}>Forma de Pagamento</label>
+                        <select name="plano" id="plano" style={{backgroundColor: 'transparent', padding: '3px', marginLeft: '10px', borderRadius: '10px'}}>
+                            <option value="1">Boleto</option>
+                            <option value="2"> pix</option>
+                        </select>
                     </div>
 
                 <div class="input-cadastro w50">
