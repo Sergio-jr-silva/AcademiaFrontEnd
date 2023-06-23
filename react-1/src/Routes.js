@@ -17,7 +17,7 @@ function RoutesApp(){
                 <Route path='/cadastro-instrutor' element={<Instrutor/>}/>
                 <Route path='/cadastro-treino' element={<Treino/>}/>
                 <Route path='/cadastro-exercicio' element={<Exercicio/>}/>
-                <Route path='/plano' element={<Plano/>}/>
+                <Route path='/planos' element={<Plano/>}/>
             </Routes>
         </BrowserRouter>
     )

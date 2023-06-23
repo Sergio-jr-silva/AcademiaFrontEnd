@@ -1,163 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Body */
-  body {
-    background-color: rgba(0, 0, 0, 0.904);
-  }
-  
-  /* Container principal */
-  .main {
-    background-position: center;
-    /*height: 100vh;*/
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  .person-container {
-    color: #FFFFFF;
-  }
-  
-  .person-container__name {
-    font-size: 35px;
-    /*margin-bottom: 50px;
-    margin-top: -100px;*/
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 40px;
-  }
-  
-  .info-container {
-    display: flex;
-    gap: 16px;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 40px;
-  }
-  
-  .info-box {
-    width: 360px; /* Mudança de largura | versão 1: 340px */
-    height: 240px; /* Mudança de altura | versão 1: 180px */
-    background-color: rgba(255, 255, 255, 0.747);
-    padding: 24px;
-    border-radius: 32px;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  .info-box p {
-    text-align: left;
-  }
-  
-  .info-box__title {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .contact-container {
-    display: flex;
-    gap: 24px;
-    justify-content: center;
-  }
-  
-  .contact-container__link {
-    background-color: #13121A;
-    width: 56px;
-    height: 56px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .contact-container__icon {
-    width: 32px;
-  }
-
- .radio {
-    padding: 10px;
-    background-color: #13121A;
-    border-radius: 15px;
-    color: #FFF;
-    margin-top: 0.7rem;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    cursor: pointer;
-  }
-
-  strong {
-    font-family: 'Prompt', sans-serif;
-    font-weight: 700;
-    font-size: 28px;
+.card{
+  margin-left: 20rem;
+  margin-top: 10rem;
+  flex-wrap: wrap;
+  display: flex;
+ margin-left: 0 auto;
+  gap: 5rem;
 }
 
-.pagamento .select {
-  color: #FFF;
-  font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
+.card-back{
+  width: 350px;
+  height: 600px;
+  border-radius: 20px;
+  
+}
+
+h3{
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: center;
 }
 
-.pagamento label {
-  margin-bottom: 2rem;
+h4{
+  font-size: 30px;
+    margin-top: 20%;
+    margin-left: 30%;
+    
 }
 
-select {
-  background-color: transparent;
-  color: white;
-  display: block;
-  padding: 5px;
-  border-radius: 15px;
-  font-size: 18px;
-  border: 1px solid rgba(255, 255, 255, 0.432);
-  margin: auto;
+.yellow{
+background: rgb(224, 222, 222);
 }
 
-option {
-  color: black;
-}
-
-.select select:hover{
-  border: 1px solid white;
-}
-
-.botao button {
-  background-color: transparent;
-  color: #fff;
+.comprar{
   font-size: 20px;
-  cursor: pointer;
-  border: 1px solid rgba(255, 255, 255, 0.432);
-  padding: 5px 15px;
-  margin: 10px;
-  border-radius: 8px;
+  border-radius: 20px;
+  padding: 5px 20px 5px 20px;
+  background-color: black;
+  margin-left: 22%;
+  margin-top: 20px;
 }
 
-.botao{
-  text-align: center;
+p{
+  font-size: 14px;
+  margin-bottom: 20px;
+ text-align: center;
 }
 
-.botao button:hover {
-  border: 1px solid white;
+li{
+  list-style: none;
+  margin-top: 30px;
+ text-align: center;
 }
 
-  @media (max-width: 700px){
-    .person-container__name {
-      padding: 17rem 0 16rem 0;
-      margin-bottom: -15rem;
-    }
-    .pagamento .select {
-      padding-left: 15px;
-      margin-top: 15rem;
-    }
-    .pagamento .select{
-      margin-left: 0;
-    }
-    /*.info-container {
-      margin-top: 10rem;
-    }*/
-  }
+.iconRed{
+    color: red;
+}
+
+.iconGreen{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  color: green;
+}
+
+.comprar:hover{
+  background-color: rgb(39, 38, 38);
+  transition: 0.3s all;
+}
+
