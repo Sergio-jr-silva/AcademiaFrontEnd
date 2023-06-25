@@ -51,11 +51,13 @@ import image from '../../images/Dumbbell exercise-rafiki.png'
                             <option value="3"> Premium</option>  
                         </select>
 
+                        
                         <label for="plano" style={{color: '#3D3D3D', fontWeight: 'bold', display: 'block', marginBottom: '5px'}}>Forma de Pagamento</label>
                         <select name="plano" id="plano" style={{backgroundColor: 'transparent', padding: '3px', marginLeft: '10px', borderRadius: '10px'}}>
                             <option value="1">Boleto</option>
                             <option value="2"> pix</option>
                         </select>
+                      
                     </div>
 
                 <div class="input-cadastro w50">

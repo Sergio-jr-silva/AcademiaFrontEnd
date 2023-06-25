@@ -69,3 +69,17 @@ li{
   transition: 0.3s all;
 }
 
+
+#basic{
+  color: rgb(0, 0, 0);
+
+}
+
+
+#medium{
+  color: rgb(176, 176, 9);
+}
+
+#premium{
+  color: rgb(208, 0, 255);
+}

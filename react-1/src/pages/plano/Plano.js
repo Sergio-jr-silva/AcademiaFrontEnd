@@ -3,12 +3,12 @@ import './plano.css';
 
 function Plano (){
     return (
-      <div class="card-images">
+      <div class="card-images" id="basic">
 
       <div class="card">
         <div class="card-back yellow">
 
-              <h3>Plano Black</h3>
+              <h3>Plano Basic</h3>
           <h4>R$ 149,00/</h4>
           <p>Por mês</p>
           <a href="/cadastro-aluno" class="comprar">Comprar Plano</a>
@@ -23,9 +23,9 @@ function Plano (){
 
 
 
-       <div class="card-back yellow">
+       <div class="card-back yellow" id="medium">
 
-          <h3>Plano Black</h3>
+          <h3>Plano Medium</h3>
           <h4>R$ 149,00/</h4>
           <p>Por mês</p>
           <a href="/cadastro-aluno" class="comprar">Comprar Plano</a>
@@ -40,9 +40,9 @@ function Plano (){
 
 
 
-       <div class="card-back yellow">
+       <div class="card-back yellow" id="premium">
 
-          <h3>Plano Black</h3>
+          <h3>Plano Premium</h3>
           <h4>R$ 149,00/</h4>
           <p>Por mês</p>
           <a href="/cadastro-aluno" class="comprar">Comprar Plano</a>
