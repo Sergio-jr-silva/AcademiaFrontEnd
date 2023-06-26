@@ -27,23 +27,14 @@ function Treino (){
                     <input type="date" name="data" id="data"/>
                 </div>
 
-                <div class="input-treino">
-                        <label for="carga"> Carga </label>
-                        <input type="text" id="carga" placeholder="Ex: 20kg" required/>
-                    </div>
-
+    
                     <div class="input-treino">
-                    <select className='input-treino'>
-                        <options>Voador</options>
-                        <options>Supino</options>
-                        <options>Halteres</options>
-                    </select>
-                       
-                    </div>
-
-                <div class="input-treino">
-                        <label for="repeticoes"> Repetições </label>
-                        <input type="text" id="repeticoes" placeholder="Ex: 4x15" required/>
+                    <label for="exercicio" style={{color: '#3D3D3D', fontWeight: 'bold', display: 'block', marginBottom: '10px'}}>Selecione os exercicios</label>
+                        <select name="exercicio" id="plano" style={{backgroundColor: 'transparent', padding: '3px', borderRadius: '10px'}}>
+                            <option value="#">Selecione</option>
+                            <option value="1">voador</option>
+                            <option value="2">supino</option>
+                       </select>
                     </div>
 
                 <div class="input-treino">

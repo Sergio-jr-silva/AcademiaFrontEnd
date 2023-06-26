@@ -72,14 +72,24 @@ li{
 
 #basic{
   color: rgb(0, 0, 0);
-
 }
+
 
 
 #medium{
   color: rgb(176, 176, 9);
 }
 
+#medium a{
+  background-color: rgb(176, 176, 9);
+}
+
+
+
 #premium{
   color: rgb(208, 0, 255);
+}
+
+#premium a{
+  background-color: rgb(208, 0, 255);
 }

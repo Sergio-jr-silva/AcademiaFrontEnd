@@ -12,9 +12,14 @@ function Exercicio(){
             <h2>Criar Exercício</h2>
 
             <form action="#">
+            <div class="input-exercicio">
+                        <label for="repeticoes"> Nome do Exercicio </label>
+                        <input type="text" id="repeticoes" placeholder="Ex: Supino" required/>
+                    </div>
+
                 <div class="input-exercicio">
                         <label for="repeticoes"> Repetições </label>
-                        <input type="text" id="repeticoes" placeholder="Ex: 4x15" required/>
+                        <input type="text" id="repeticoes" placeholder="Ex: 15" required/>
                     </div>
 
                 <div class="input-exercicio">

@@ -17,7 +17,7 @@ class ListTreino extends React.Component {
                 <header>
                     <h1>Treino</h1>
                 </header>
-                <Table striped bordered hover>
+                <Table>
                     <thead>
                         <tr>
                             <th>Nome</th>

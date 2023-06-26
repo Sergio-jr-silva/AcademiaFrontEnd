@@ -8,14 +8,15 @@ function Home(){
         <div class="Home"> 
         <nav style={{marginTop: '-0px'}}>
         <ul class="menu">
-            <li class="logo"><a href="/">Next Level</a></li>
+        <li class="logo">Next Level</li>
+
             <li class="item"><a href="/">Home</a></li>
             <li class="item"><a href="/planos">planos</a></li>
             <li class="item"><a href="/login-instrutor">instrutor</a></li>
             <li class="item"><a href="/">Contatos</a></li>
 
             <li class="item button"><a href="/login">Login</a></li>
-            <li class="item button secondary"><a href="/cadastro">Sign Up</a></li>
+            <li class="item button secondary"><a href="/cadastro">Cadastrar-se</a></li>
             <li class="toggle" onClick={SidebarButton}><span></span></li>
         </ul>
     </nav>

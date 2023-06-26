@@ -1,3 +1,4 @@
+
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Login from './pages/login/Login';
 import Cadastro from './pages/cadastro/Cadastro.js';
@@ -7,17 +8,23 @@ import Exercicio from './pages/exercicio/Exercicio.js';
 import Home from './pages/home/Home.js';
 import Plano from './pages/plano/Plano.js';
 
+
 function RoutesApp(){
     return(
         <BrowserRouter>
             <Routes>
                 <Route path='/' element={<Home/>}/>
                 <Route path='/login' element={<Login/>}/>
+                <Route path='/planos' element={<Plano/>}/>
+
+         
                 <Route path='/cadastro-aluno' element={<Cadastro/>}/>
                 <Route path='/cadastro-instrutor' element={<Instrutor/>}/>
                 <Route path='/cadastro-treino' element={<Treino/>}/>
                 <Route path='/cadastro-exercicio' element={<Exercicio/>}/>
-                <Route path='/planos' element={<Plano/>}/>
+
+              
+              
             </Routes>
         </BrowserRouter>
     )
