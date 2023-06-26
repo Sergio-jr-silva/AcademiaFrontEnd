@@ -1,6 +1,5 @@
 import './home.css';
 import SidebarButton from '../Sidebar/SidebarButton';
-
 function Home(){
 
     return (
