@@ -1,7 +1,7 @@
 import image from "../../images/Personal Trainer-amico.png"
 import './instrutor.css';
 import React, { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, redirect } from "react-router-dom";
 import axios from "axios";
 
 
@@ -59,7 +59,10 @@ function Instrutor (){
 		}
     
         axios.post("http://localhost:8082/instrutor", Instrutor)
-			.then((response) => { console.log('Instrutor cadastrado com sucesso.') })
+			.then((response) => { 
+                console.log('Instrutor cadastrado com sucesso.') 
+                redirect("/home-instrutor");
+        })
 			.catch((error) => { console.log('Erro ao incluir o Instrutor.') })  
   
     }     
@@ -154,7 +157,7 @@ function Instrutor (){
                 </div>
 
                 <div class="input-instrutor">
-                    <button>Cadastrar</button>
+                    <button onClick={ () => salvar()}>Cadastrar</button>
                 </div>
                
             </form>

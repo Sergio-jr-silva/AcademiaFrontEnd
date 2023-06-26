@@ -1,10 +1,10 @@
-import './cadastro.css';
+import './aluno.css';
 import image from '../../images/Dumbbell exercise-rafiki.png'
 import React, { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, redirect } from "react-router-dom";
 import axios from "axios";
 
-    function Cadastro (){
+    function Aluno (){
         const { state } = useLocation();
 
 	const [idAluno, setIdAluno] = useState();
@@ -56,7 +56,10 @@ import axios from "axios";
 		}
     
         axios.post("http://localhost:8082/aluno", Aluno)
-			.then((response) => { console.log('Aluno cadastrado com sucesso.') })
+			.then((response) => { 
+                console.log('Aluno cadastrado com sucesso.') 
+                redirect("/home-aluno");
+        })
 			.catch((error) => { console.log('Erro ao incluir o Aluno.') })  
   
     }     
@@ -160,4 +163,4 @@ import axios from "axios";
   );
 }
 
-export default Cadastro;
+export default Aluno;
