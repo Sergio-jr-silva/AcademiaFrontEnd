@@ -58,7 +58,7 @@ import axios from "axios";
         axios.post("http://localhost:8082/aluno", Aluno)
 			.then((response) => { 
                 console.log('Aluno cadastrado com sucesso.') 
-                redirect("/home-aluno");
+                
         })
 			.catch((error) => { console.log('Erro ao incluir o Aluno.') })  
   

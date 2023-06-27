@@ -20,8 +20,6 @@ function Exercicio(){
 			.then((response) => {
 				setIdExercicio(response.data.id)
 				setNome(response.data.nome)
-			
-				
 			})
 		}
 		
