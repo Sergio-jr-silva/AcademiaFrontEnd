@@ -11,7 +11,9 @@ function Treino (){
 	const [frequencia, setFrequencia] =  useState();
 	const [dataInicio, setDataInicio] =  useState();
 	const [exercicio, setExercicio] =  useState();
-
+	const [repeticoes, setRepeticoes] =  useState();
+	const [serie, setSerie] =  useState();
+	const [carga, setCarga] =  useState();
 
 	useEffect(() => {
 
@@ -24,7 +26,9 @@ function Treino (){
 				setFrequencia(response.data.frequencia)
 				setDataInicio(response.data.dataInicio)
 				setExercicio(response.data.exercicio)
-				
+                setRepeticoes(response.data.repeticoes)
+				setSerie(response.data.serie)
+				setCarga(response.data.carga)
 			})
 		}
 		
@@ -36,8 +40,10 @@ function Treino (){
 			nome: nome,
 			frequencia: frequencia,
 			dataInicio: dataInicio,
-			exercicio: exercicio
-			
+			exercicio: exercicio,
+            repeticoes: repeticoes,
+			serie: serie,
+			carga: carga
 		}
     
         axios.post("http://localhost:8082/exercicio", treino)
@@ -83,15 +89,37 @@ function Treino (){
                     <div class="input-treino">
                     <label for="exercicio" style={{color: '#3D3D3D', fontWeight: 'bold', display: 'block', marginBottom: '10px'}}>Selecione os exercicios</label>
                         <select name="exercicio" id="plano" style={{backgroundColor: 'transparent', padding: '3px', borderRadius: '10px'}} 
-                        value={exercicio}
-                        onChange={(e,{value}) => {
-                            exercicio(value)}}
+                      value={exercicio}
+                      onChange={e => setExercicio(e.target.value)}
                         >
                             <option value="#">Selecione</option>
                             <option value="voador">voador</option>
                             <option value="supino">supino</option>
                        </select>
                     </div>
+                    <div class="input-exercicio">
+                        <label for="repeticoes"> Repetições </label>
+                        <input type="text" id="repeticoes" placeholder="Ex: 15" 
+                        value={repeticoes}
+                        onChange={e => setRepeticoes(e.target.value)}
+                        required/>
+                    </div>
+
+                <div class="input-exercicio">
+                    <label for="serie"> Número de Série </label>
+                    <input type="text" id="serie" placeholder="Ex: 3x" 
+                    value={serie}
+                    onChange={e => setSerie(e.target.value)}
+                    required/>
+                </div>
+
+                <div class="input-exercicio">
+                    <label for="carga">Carga</label>
+                    <input id="carga" type="text" name="carga" placeholder="Ex: 5kg" 
+                    value={carga}
+                    onChange={e => setCarga(e.target.value)}
+                    required/>
+                </div>
 
                 <div class="input-treino">
                     <button>Cadastrar</button>

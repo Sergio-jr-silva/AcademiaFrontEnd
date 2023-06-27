@@ -11,11 +11,11 @@ function Home(){
 
             <li class="item"><a href="/">Home</a></li>
             <li class="item"><a href="/planos">planos</a></li>
-            <li class="item"><a href="/login-instrutor">instrutor</a></li>
+            <li class="item"><a href="/cadastro-instrutor">instrutor</a></li>
             <li class="item"><a href="/">Contatos</a></li>
 
             <li class="item button"><a href="/login">Login</a></li>
-            <li class="item button secondary"><a href="/cadastro">Cadastrar-se</a></li>
+            <li class="item button secondary"><a href="/cadastro-aluno">Cadastrar-se</a></li>
             <li class="toggle" onClick={SidebarButton}><span></span></li>
         </ul>
     </nav>

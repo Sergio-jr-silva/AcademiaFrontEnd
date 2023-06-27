@@ -9,9 +9,7 @@ function Exercicio(){
 
 	const [idExercicio, setIdExercicio] = useState();
 	const [nome, setNome] = useState();
-	const [repeticoes, setRepeticoes] =  useState();
-	const [serie, setSerie] =  useState();
-	const [carga, setCarga] =  useState();
+
 
 
 	useEffect(() => {
@@ -22,9 +20,7 @@ function Exercicio(){
 			.then((response) => {
 				setIdExercicio(response.data.id)
 				setNome(response.data.nome)
-				setRepeticoes(response.data.repeticoes)
-				setSerie(response.data.serie)
-				setCarga(response.data.carga)
+			
 				
 			})
 		}
@@ -34,11 +30,7 @@ function Exercicio(){
 	function salvar() {
 
 		let exercicio = {
-			nome: nome,
-			repeticoes: repeticoes,
-			serie: serie,
-			carga: carga
-			
+			nome: nome	
 		}
     
         axios.post("http://localhost:8082/exercicio", exercicio)
@@ -63,30 +55,6 @@ function Exercicio(){
                         onChange={e => setNome(e.target.value)}
                         required/>
                     </div>
-
-                <div class="input-exercicio">
-                        <label for="repeticoes"> Repetições </label>
-                        <input type="text" id="repeticoes" placeholder="Ex: 15" 
-                        value={repeticoes}
-                        onChange={e => setRepeticoes(e.target.value)}
-                        required/>
-                    </div>
-
-                <div class="input-exercicio">
-                    <label for="serie"> Número de Série </label>
-                    <input type="text" id="serie" placeholder="Ex: 3x" 
-                    value={serie}
-                    onChange={e => setSerie(e.target.value)}
-                    required/>
-                </div>
-
-                <div class="input-exercicio">
-                    <label for="carga">Carga</label>
-                    <input id="carga" type="text" name="carga" placeholder="Ex: 5kg" 
-                    value={carga}
-                    onChange={e => setCarga(e.target.value)}
-                    required/>
-                </div>
 
                 <div class="input-exercicio">
                     <button onClick={() => salvar()}>Cadastrar</button>
